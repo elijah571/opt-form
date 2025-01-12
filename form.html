@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Opt-in Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Opt-in Form</h2>
+        <form id="optinForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your Full Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="disclaimer" name="disclaimer" required>
+                <label for="disclaimer" class="disclaimer">
+                    I agree to receive material from Vibe/Mydojo and understand the privacy policy.
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="./form.js"></script>
+</body>
+</html>
