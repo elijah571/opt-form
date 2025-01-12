@@ -35,19 +35,19 @@ document.getElementById('optinForm').addEventListener('submit', async function(e
         disclaimer: disclaimer
     };
 
-    try {
-        // Sending POST request using axios
-        const response = await axios.post('/submit-optin', formData);
+    // try {
+    //     // Sending POST request using axios
+    //     const response = await axios.post('/submit-optin', formData);
         
-        // Handle success response
-        alert('Form submitted successfully!');
-        console.log('Success:', response.data);
+    //     // Handle success response
+    //     alert('Form submitted successfully!');
+    //     console.log('Success:', response.data);
 
-        // Reset the form
-        document.getElementById('optinForm').reset();
-    } catch (error) {
-        // Handle error response
-        alert('There was an error submitting the form. Please try again.');
-        console.error('Error:', error);
-    }
+    //     // Reset the form
+    //     document.getElementById('optinForm').reset();
+    // } catch (error) {
+    //     // Handle error response
+    //     alert('There was an error submitting the form. Please try again.');
+    //     console.error('Error:', error);
+    // }
 });
